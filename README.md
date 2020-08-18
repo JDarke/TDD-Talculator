@@ -1,2 +1,3 @@
 # TDD-Talculator
-React calculator using Test-Driven Development 
+
+React calculator, refactored to use hooks, using Jest & Enzyme for testing.
