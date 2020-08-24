@@ -1,8 +1,8 @@
 import React from "react";
 
-const FormulaScrn = () => {
+const FormulaScrn = ({formula}) => {
   return (
-    <div className="formula">{null}</div>
+    <div className="formula">{formula}</div>
   );
 };
 

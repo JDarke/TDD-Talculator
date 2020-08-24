@@ -1,14 +1,14 @@
 import React from "react";
-import FormulaScrn from '../FormulaScrn/FormulaScrn'
-import Value from '../Value/Value'
+import FormulaScrn from "../FormulaScrn/FormulaScrn";
+import Value from "../Value/Value";
 
-const Display = () => {
+const Display = ({ outputSize, formula, output }) => {
   return (
     <div className="display">
-        <FormulaScrn  />
-        <Value /> 
+      <FormulaScrn formula={formula} />
+      <Value output={output} outputSize={outputSize}/>
     </div>
   );
 };
- 
+
 export default Display;

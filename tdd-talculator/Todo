@@ -1,0 +1,2 @@
+Replace fontsizing with responsive display via transform: scale .
+Add tests for handler functions
