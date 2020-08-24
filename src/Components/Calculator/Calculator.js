@@ -35,7 +35,6 @@ const Calculator = () => {
     } else if (!value.includes("MAX")) {
       var val = value;
       if (value.length >= maxChars) {
-        //console.log('max');
         handleMax();
         setLast("num");
         return;
@@ -48,7 +47,6 @@ const Calculator = () => {
       }
       setPrevValue(value);
       setValue(val);
-      //console.log(val);
       setOutput(parseFloat(val).toLocaleString());
       setOutputSize(getFontSize(val.toString()));
     }
@@ -144,13 +142,11 @@ const Calculator = () => {
   };
 
   const handleMax = () => {
-    //not functioning - move inside a useEffect on value change?
     console.log(`value: ${value}, output: ${output} `);
     setPrevValue(value);
     setValue(warn);
     setOutput(warn);
-    
-    
+  
     setTimeout(() => {
       setOutput(parseFloat(prevValue).toLocaleString());
       setValue(prevValue);
